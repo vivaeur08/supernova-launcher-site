@@ -1,0 +1,68 @@
+:root {
+  /* Couleurs Zenra */
+  --bg-black: #000000;
+  --bg-dark: #050810;
+  --bg-purple: #0a0e1a;
+  --purple-500: #7BC950;
+  --purple-400: #9bd877;
+  --purple-700: #5fa83a;
+  --purple-glow: rgba(123, 201, 80, 0.5);
+  --purple-glow-strong: rgba(123, 201, 80, 0.8);
+  
+  --text-white: #ffffff;
+  --text-secondary: #c8e6b8;
+  --text-muted: #5fa83a;
+  --text-gray: #94a3b8;
+  
+  --success: #22c55e;
+  --danger: #ef4444;
+  --discord: #5865F2;
+  
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+  
+  --font-display: 'Orbitron', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+.stars-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  background: 
+    radial-gradient(ellipse at top, #0d1a08 0%, #050810 50%, #000000 100%);
+  overflow: hidden;
+}
+
+.bg-glow-1 {
+  width: 500px;
+  height: 500px;
+  background: #7BC950;
+  top: -150px;
+  right: -100px;
+}
+
+.bg-glow-2 {
+  width: 400px;
+  height: 400px;
+  background: #5fa83a;
+  bottom: 10%;
+  left: -100px;
+  animation-delay: 7s;
+}
+
+.bg-glow-3 {
+  width: 350px;
+  height: 350px;
+  background: #4a8530;
+  top: 50%;
+  left: 40%;
+  animation-delay: 14s;
+  opacity: 0.25;
+}

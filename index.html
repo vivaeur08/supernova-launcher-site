@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zenra Launcher - Le launcher Minecraft moderne pour jouer avec tes amis. Modpacks, mods, skins, tout en un.">
+  <meta name="theme-color" content="#7BC950">
+  
+  <title>Zenra Launcher — Le launcher Minecraft moderne</title>
+  
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div class="stars-bg" id="stars-bg"></div>
+  <div class="particles-bg" id="particles-bg"></div>
+  
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="#hero" class="navbar-logo">
+        <img src="assets/logo.png" alt="Zenra" class="navbar-logo-img">
+        <span class="navbar-logo-text">ZENRA</span>
+      </a>
+      
+      <ul class="navbar-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#showcase">Aperçu</a></li>
+        <li><a href="#changelog">Changelog</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <a href="https://discord.gg/9297NAsHMa" target="_blank" class="navbar-btn navbar-btn-discord">
+          <i class="fab fa-discord"></i>
+          <span>Discord</span>
+        </a>
+        <a href="#download" class="navbar-btn navbar-btn-download">
+          <i class="fas fa-download"></i>
+          <span>Télécharger</span>
+        </a>
+      </div>
+      
+      <button class="navbar-burger" id="navbar-burger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-container">
+      
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span>Version 0.2.0 disponible</span>
+      </div>
+      
+      <div class="hero-logo">
+        <img src="assets/logo.png" alt="Zenra" class="hero-logo-img">
+      </div>
+      
+      <h1 class="hero-title">
+        <span class="hero-title-line">Le launcher Minecraft</span>
+        <span class="hero-title-line hero-title-gradient">nouvelle génération</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        Modpacks officiels et communautaires (Modrinth + CurseForge), catalogue de mods/shaders/resource packs intégré, 
+        instances illimitées, skins en jeu, et bien plus.
+      </p>
+      
+      <div class="hero-cta">
+        <a href="#download" class="btn btn-primary btn-large">
+          <i class="fas fa-download"></i>
+          <span>Télécharger gratuitement</span>
+          <div class="btn-shine"></div>
+        </a>
+        <a href="https://discord.gg/9297NAsHMa" target="_blank" class="btn btn-secondary btn-large">
+          <i class="fab fa-discord"></i>
+          <span>Rejoindre le Discord</span>
+        </a>
+      </div>
+      
+      <div class="hero-info">
+        <div class="hero-info-item">
+          <i class="fab fa-windows"></i>
+          <span>Windows 10/11</span>
+        </div>
+        <div class="hero-info-item">
+          <i class="fas fa-bolt"></i>
+          <span>Auto-update intégré</span>
+        </div>
+        <div class="hero-info-item">
+          <i class="fas fa-heart" style="color: #ef4444;"></i>
+          <span>100% gratuit</span>
+        </div>
+      </div>
+      
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number" data-target="30">0</div>
+          <div class="stat-symbol">+</div>
+          <div class="stat-label">Features</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-symbol">%</div>
+          <div class="stat-label">Gratuit</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="1">0</div>
+          <div class="stat-label">Clic pour installer</div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <a href="#features" class="scroll-indicator" aria-label="Défiler vers le bas">
+      <span>Découvrir</span>
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <div class="section-badge">
+          <i class="fas fa-sparkles"></i>
+          <span>Features</span>
+        </div>
+        <h2 class="section-title">
+          Pourquoi <span class="text-gradient">Zenra</span> ?
+        </h2>
+        <p class="section-subtitle">
+          Un launcher complet et moderne, pensé pour les joueurs exigeants.
+        </p>
+      </div>
+      
+      <div class="features-grid">
+        
+        <div class="feature-card reveal">
+          <div class="feature-icon feature-icon-purple">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3 class="feature-title">Installation 1-clic</h3>
+          <p class="feature-desc">
+            Java, mods, configs... tout est téléchargé et installé automatiquement. 
+            Tu cliques et tu joues.
+          </p>
+        </div>
+        
+        <div class="feature-card reveal" style="transition-delay: 0.1s">
+          <div class="feature-icon feature-icon-pink">
+            <i class="fas fa-cube"></i>
+          </div>
+          <h3 class="feature-title">Catalogue 4-en-1</h3>
+          <p class="feature-desc">
+            <strong>Mods, Resource Packs, Shaders et Datapacks</strong> dans un seul catalogue. 
+            Modrinth et CurseForge intégrés.
+          </p>
+        </div>
+        
+        <div class="feature-card reveal" style="transition-delay: 0.2s">
+          <div class="feature-icon feature-icon-blue">
+            <i class="fas fa-cloud-download-alt"></i>
+          </div>
+          <h3 class="feature-title">Modpacks publics</h3>
+          <p class="feature-desc">
+            Découvre des milliers de modpacks Modrinth et CurseForge directement 
+            depuis l'onglet Discover.
+          </p>
+        </div>
+        
+        <div class="feature-card reveal" style="transition-delay: 0.3s">
+          <div class="feature-icon feature-icon-green">
+            <i class="fas fa-thumbtack"></i>
+          </div>
+          <h3 class="feature-title">Instances épinglées</h3>
+          <p class="feature-desc">
+            Épingle tes instances favorites sur la home pour y accéder en 1 clic 
+            avec leurs images en grand.
+          </p>
+        </div>
+        
+        <div class="feature-card reveal" style="transition-delay: 0.4s">
+          <div class="feature-icon feature-icon-discord">
+            <i class="fab fa-discord"></i>
+          </div>
+          <h3 class="feature-title">Discord intégré</h3>
+          <p class="feature-desc">
+            Connexion Discord obligatoire, Rich Presence, vérification serveur. 
+            Communauté garantie.
+          </p>
+        </div>
+        
+        <div class="feature-card reveal" style="transition-delay: 0.5s">
+          <div class="feature-icon feature-icon-orange">
+            <i class="fas fa-tshirt"></i>
+          </div>
+          <h3 class="feature-title">Skins en jeu</h3>
+          <p class="feature-desc">
+            CustomSkinLoader auto-installé. Ton skin custom est visible 
+            même en mode offline.
+          </p>
+        </div>
+        
+        <div class="feature-card reveal" style="transition-delay: 0.6s">
+          <div class="feature-icon feature-icon-purple">
+            <i class="fas fa-bug"></i>
+          </div>
+          <h3 class="feature-title">Crash Analyzer</h3>
+          <p class="feature-desc">
+            Détection automatique du mod responsable d'un crash et 
+            propositions de solutions intelligentes.
+          </p>
+        </div>
+        
+        <div class="feature-card reveal" style="transition-delay: 0.7s">
+          <div class="feature-icon feature-icon-blue">
+            <i class="fas fa-sync-alt"></i>
+          </div>
+          <h3 class="feature-title">Auto-update</h3>
+          <p class="feature-desc">
+            Le launcher se met à jour automatiquement via GitHub Releases. 
+            Toujours la dernière version.
+          </p>
+        </div>
+        
+        <div class="feature-card reveal" style="transition-delay: 0.8s">
+          <div class="feature-icon feature-icon-pink">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3 class="feature-title">Personnalisation totale</h3>
+          <p class="feature-desc">
+            Couleur d'accent, fond personnalisé, mode online/offline switchable. 
+            Ton launcher, à ton image.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE -->
+  <section class="showcase" id="showcase">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <div class="section-badge">
+          <i class="fas fa-eye"></i>
+          <span>Aperçu</span>
+        </div>
+        <h2 class="section-title">
+          Une interface qui <span class="text-gradient">claque</span>
+        </h2>
+        <p class="section-subtitle">
+          Design glassmorphism, animations fluides, expérience premium.
+        </p>
+      </div>
+      
+      <div class="showcase-item reveal">
+        <div class="showcase-image">
+          <div class="showcase-glow"></div>
+          <img src="assets/screenshot-home.png" alt="Page Home Zenra">
+        </div>
+        <div class="showcase-content">
+          <div class="showcase-tag">
+            <i class="fas fa-home"></i>
+            <span>Page d'accueil</span>
+          </div>
+          <h3 class="showcase-title">Tes instances en un coup d'œil</h3>
+          <p class="showcase-desc">
+            Épingle tes instances favorites sur la home pour y accéder rapidement. 
+            Bouton PLAY pour lancer ta dernière instance jouée en 1 clic.
+          </p>
+          <ul class="showcase-features">
+            <li><i class="fas fa-check"></i> Instances épinglées (max 4)</li>
+            <li><i class="fas fa-check"></i> Bouton PLAY rapide</li>
+            <li><i class="fas fa-check"></i> Stats de jeu en direct</li>
+            <li><i class="fas fa-check"></i> News intégrées</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="showcase-item showcase-item-reverse reveal">
+        <div class="showcase-image">
+          <div class="showcase-glow"></div>
+          <img src="assets/screenshot-discover.png" alt="Page Discover">
+        </div>
+        <div class="showcase-content">
+          <div class="showcase-tag">
+            <i class="fas fa-compass"></i>
+            <span>Discover</span>
+          </div>
+          <h3 class="showcase-title">Modpacks à l'infini</h3>
+          <p class="showcase-desc">
+            Découvre les modpacks officiels du serveur ET explore des milliers 
+            de modpacks populaires de Modrinth et CurseForge.
+          </p>
+          <ul class="showcase-features">
+            <li><i class="fas fa-check"></i> Modpacks serveur officiels</li>
+            <li><i class="fas fa-check"></i> Catalogue Modrinth complet</li>
+            <li><i class="fas fa-check"></i> Catalogue CurseForge complet</li>
+            <li><i class="fas fa-check"></i> Installation en 1 clic</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="showcase-item reveal">
+        <div class="showcase-image">
+          <div class="showcase-glow"></div>
+          <img src="assets/screenshot-instances.png" alt="Page Instances">
+        </div>
+        <div class="showcase-content">
+          <div class="showcase-tag">
+            <i class="fas fa-cube"></i>
+            <span>Mes Instances</span>
+          </div>
+          <h3 class="showcase-title">Catalogue de mods intégré</h3>
+          <p class="showcase-desc">
+            Gère tes mods, resource packs, shaders et datapacks sans quitter le launcher. 
+            Scanner intelligent qui récupère les images officielles.
+          </p>
+          <ul class="showcase-features">
+            <li><i class="fas fa-check"></i> Mods, RP, Shaders, Datapacks</li>
+            <li><i class="fas fa-check"></i> Scanner Modrinth automatique</li>
+            <li><i class="fas fa-check"></i> Drag & drop de fichiers</li>
+            <li><i class="fas fa-check"></i> Export/Import d'instances</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="showcase-item showcase-item-reverse reveal">
+        <div class="showcase-image">
+          <div class="showcase-glow"></div>
+          <img src="assets/screenshot-settings.png" alt="Page Settings">
+        </div>
+        <div class="showcase-content">
+          <div class="showcase-tag">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+          </div>
+          <h3 class="showcase-title">Personnalise tout</h3>
+          <p class="showcase-desc">
+            8 couleurs d'accent, fond personnalisé, switch Discord/Microsoft, 
+            skin Minecraft custom, et bien plus.
+          </p>
+          <ul class="showcase-features">
+            <li><i class="fas fa-check"></i> Couleur d'accent</li>
+            <li><i class="fas fa-check"></i> Fond personnalisé</li>
+            <li><i class="fas fa-check"></i> Skin par URL/fichier/pseudo</li>
+            <li><i class="fas fa-check"></i> Tutoriel interactif</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- CHANGELOG -->
+  <section class="changelog" id="changelog">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <div class="section-badge">
+          <i class="fas fa-history"></i>
+          <span>Changelog</span>
+        </div>
+        <h2 class="section-title">
+          En constante <span class="text-gradient">évolution</span>
+        </h2>
+        <p class="section-subtitle">
+          Nouvelles features régulières, bugs fixés rapidement.
+        </p>
+      </div>
+      
+      <div class="timeline">
+        
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-version">v0.2.0</span>
+              <span class="timeline-badge timeline-badge-new">Latest</span>
+              <span class="timeline-date">Aujourd'hui</span>
+            </div>
+            <h3 class="timeline-title">Catalogue étendu + UX premium</h3>
+            <ul class="timeline-list">
+              <li>🎨 Splash screen + Loading screen au démarrage</li>
+              <li>🧩 Catalogue 4-en-1 (Mods, Resource Packs, Shaders, Datapacks)</li>
+              <li>🌍 Modpacks Modrinth + CurseForge dans Discover</li>
+              <li>⭐ Instances épinglées sur Home</li>
+              <li>▶️ Bouton PLAY rapide (dernière instance jouée)</li>
+              <li>🔄 Switch rapide Discord ↔ Microsoft</li>
+              <li>🎓 Tutoriel interactif avec spotlight</li>
+              <li>🔍 Scanner intelligent (récupère images/noms)</li>
+              <li>👕 CustomSkinLoader auto-install</li>
+              <li>🐛 Crash Analyzer intelligent</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item reveal" style="transition-delay: 0.1s">
+          <div class="timeline-dot">
+            <i class="fas fa-cube"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-version">v0.1.5</span>
+              <span class="timeline-date">Janvier 2026</span>
+            </div>
+            <h3 class="timeline-title">Personnalisation</h3>
+            <ul class="timeline-list">
+              <li>🎨 Couleur d'accent personnalisable (8 couleurs)</li>
+              <li>🖼️ Fond personnalisé</li>
+              <li>🔔 Notifications Windows</li>
+              <li>📋 Drag & drop fichiers</li>
+              <li>🎯 Quick Launch (dernière instance)</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item reveal" style="transition-delay: 0.2s">
+          <div class="timeline-dot">
+            <i class="fab fa-discord"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-version">v0.1.0</span>
+              <span class="timeline-badge timeline-badge-launch">Initial</span>
+              <span class="timeline-date">Janvier 2026</span>
+            </div>
+            <h3 class="timeline-title">Lancement officiel</h3>
+            <ul class="timeline-list">
+              <li>🪐 Interface glassmorphism</li>
+              <li>💬 Connexion Discord OAuth2</li>
+              <li>🛡️ Vérification serveur Discord obligatoire</li>
+              <li>🎮 Discord Rich Presence</li>
+              <li>📦 Modpacks officiels (GitHub)</li>
+              <li>🌟 Mode Vanilla + Fabric + Forge</li>
+              <li>☕ Java auto (8/17/21/25)</li>
+              <li>🔐 Microsoft login</li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <div class="section-badge">
+          <i class="fas fa-question-circle"></i>
+          <span>FAQ</span>
+        </div>
+        <h2 class="section-title">
+          Questions <span class="text-gradient">fréquentes</span>
+        </h2>
+        <p class="section-subtitle">
+          Tout ce que tu dois savoir avant de te lancer.
+        </p>
+      </div>
+      
+      <div class="faq-list">
+        
+        <details class="faq-item reveal">
+          <summary class="faq-question">
+            <span>Qu'est-ce que Zenra Launcher ?</span>
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Zenra est un launcher Minecraft <strong>moderne</strong> qui permet de jouer aux modpacks officiels du serveur Zenra, 
+              mais aussi d'explorer et installer n'importe quel modpack de <strong>Modrinth</strong> ou <strong>CurseForge</strong>.
+            </p>
+            <p style="margin-top: 10px;">
+              Il intègre un catalogue complet de mods, resource packs, shaders et datapacks, le tout dans une interface premium.
+            </p>
+          </div>
+        </details>
+        
+        <details class="faq-item reveal" style="transition-delay: 0.05s">
+          <summary class="faq-question">
+            <span>Comment installer le launcher ?</span>
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </summary>
+          <div class="faq-answer">
+            <ol>
+              <li>Télécharge le fichier <code>.exe</code> depuis ce site</li>
+              <li>Double-clique pour lancer l'installateur</li>
+              <li>Suis les étapes (1 clic suffit)</li>
+              <li>Lance le launcher depuis le raccourci Bureau</li>
+              <li>Connecte-toi avec Discord</li>
+              <li>Rejoins le serveur Discord (obligatoire)</li>
+              <li>Choisis un modpack et joue !</li>
+            </ol>
+          </div>
+        </details>
+        
+        <details class="faq-item reveal" style="transition-delay: 0.1s">
+          <summary class="faq-question">
+            <span>Discord est-il vraiment obligatoire ?</span>
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              <strong>Oui</strong>, la connexion Discord est obligatoire pour utiliser Zenra. Cela permet de :
+            </p>
+            <ul>
+              <li>Garantir une communauté unie</li>
+              <li>Recevoir des notifications</li>
+              <li>Synchroniser ton pseudo (mode offline)</li>
+              <li>Sécuriser l'accès (vérif serveur Discord)</li>
+            </ul>
+            <p style="margin-top: 10px;">
+              Il faut aussi être <strong>membre du serveur Discord Zenra</strong> pour utiliser le launcher.
+            </p>
+          </div>
+        </details>
+        
+        <details class="faq-item reveal" style="transition-delay: 0.15s">
+          <summary class="faq-question">
+            <span>Ai-je besoin d'un compte Minecraft Premium ?</span>
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              <strong>Non</strong>, Zenra fonctionne en mode <strong>offline</strong> avec ton pseudo Discord. 
+              Tu peux jouer en solo ou sur les serveurs privés.
+            </p>
+            <p style="margin-top: 10px;">
+              Pour rejoindre les <strong>serveurs publics</strong> (Hypipxel, etc.), tu peux connecter un compte Microsoft Premium 
+              et switcher facilement entre les deux modes.
+            </p>
+          </div>
+        </details>
+        
+        <details class="faq-item reveal" style="transition-delay: 0.2s">
+          <summary class="faq-question">
+            <span>Ça marche sur Mac / Linux ?</span>
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Pour le moment, <strong>seul Windows 10/11 est supporté</strong>.
+              Une version Mac et Linux est envisagée pour le futur.
+            </p>
+          </div>
+        </details>
+        
+        <details class="faq-item reveal" style="transition-delay: 0.25s">
+          <summary class="faq-question">
+            <span>Le launcher se met à jour automatiquement ?</span>
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              <strong>Oui !</strong> Zenra vérifie automatiquement les mises à jour à chaque démarrage. 
+              Une notification s'affiche en haut de l'écran quand une nouvelle version est disponible.
+            </p>
+            <p style="margin-top: 10px;">
+              Un seul clic pour télécharger, et un autre pour redémarrer. Simple et rapide.
+            </p>
+          </div>
+        </details>
+        
+        <details class="faq-item reveal" style="transition-delay: 0.3s">
+          <summary class="faq-question">
+            <span>Le launcher est vraiment gratuit ?</span>
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              <strong>100% gratuit</strong>. Pas d'abonnement, pas de pub, pas de DLC.
+              Le projet est développé bénévolement.
+            </p>
+            <p style="margin-top: 10px;">
+              💚 Aucun paiement ne sera jamais demandé.
+            </p>
+          </div>
+        </details>
+        
+        <details class="faq-item reveal" style="transition-delay: 0.35s">
+          <summary class="faq-question">
+            <span>Mes données sont-elles en sécurité ?</span>
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </summary>
+          <div class="faq-answer">
+            <p>Nous récupérons <strong>uniquement</strong> :</p>
+            <ul>
+              <li>Ton pseudo Discord</li>
+              <li>Ton ID Discord</li>
+              <li>Ton avatar Discord</li>
+              <li>La liste des serveurs Discord (pour vérifier que tu es dans le serveur Zenra)</li>
+              <li>Ton pseudo Microsoft (si tu connectes ce mode)</li>
+            </ul>
+            <p style="margin-top: 10px;">
+              <strong>Aucune autre donnée</strong> n'est collectée.
+            </p>
+          </div>
+        </details>
+        
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final" id="download">
+    <div class="cta-bg"></div>
+    
+    <div class="container">
+      <div class="cta-content reveal">
+        
+        <div class="cta-logo">
+          <img src="assets/logo.png" alt="Zenra">
+        </div>
+        
+        <h2 class="cta-title">
+          Prêt à <span class="text-gradient">commencer</span> ?
+        </h2>
+        
+        <p class="cta-subtitle">
+          Télécharge Zenra Launcher maintenant et rejoins la communauté.
+        </p>
+        
+        <div class="cta-buttons">
+          <a href="https://github.com/vivaeur08/zenra-launcher-releases/releases/latest" target="_blank" class="btn btn-primary btn-large">
+            <i class="fas fa-download"></i>
+            <span>Télécharger pour Windows</span>
+            <div class="btn-shine"></div>
+          </a>
+          <a href="https://discord.gg/9297NAsHMa" target="_blank" class="btn btn-secondary btn-large">
+            <i class="fab fa-discord"></i>
+            <span>Rejoindre le Discord</span>
+          </a>
+        </div>
+        
+        <div class="cta-info">
+          <div class="cta-info-item">
+            <i class="fab fa-windows"></i>
+            <span>Windows 10/11 (64-bit)</span>
+          </div>
+          <div class="cta-info-item" data-file-size>
+            <i class="fas fa-hdd"></i>
+            <span>~150 MB</span>
+          </div>
+          <div class="cta-info-item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Sécurisé & vérifié</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <div class="footer-col footer-col-main">
+          <div class="footer-logo">
+            <img src="assets/logo.png" alt="Zenra">
+            <span>ZENRA</span>
+          </div>
+          <p class="footer-desc">
+            Le launcher Minecraft moderne pour jouer avec tes amis.
+            Modpacks, mods, skins, et bien plus encore.
+          </p>
+          <div class="footer-socials">
+            <a href="https://discord.gg/9297NAsHMa" target="_blank" class="footer-social" title="Discord">
+              <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://github.com/vivaeur08/zenra-launcher-releases" target="_blank" class="footer-social" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#showcase">Aperçu</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">Ressources</h4>
+          <ul class="footer-links">
+            <li><a href="#download">Télécharger</a></li>
+            <li><a href="https://github.com/vivaeur08/zenra-launcher-releases" target="_blank">GitHub Releases</a></li>
+            <li><a href="https://discord.gg/9297NAsHMa" target="_blank">Discord Support</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">Légal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Confidentialité</a></li>
+            <li><a href="#">CGU</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom">
+        <p>
+          © 2026 Zenra Launcher — Fait avec 💚 par <strong>vivaeur08</strong>
+        </p>
+        <p class="footer-disclaimer">
+          Non affilié à Mojang Studios / Microsoft. Minecraft est une marque déposée de Mojang Synergies AB.
+        </p>
+      </div>
+      
+    </div>
+  </footer>
+
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/download.js"></script>
+</body>
+</html>
